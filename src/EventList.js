@@ -8,7 +8,7 @@ class EventList extends React.Component {
     const rows = [];
 
     this.props.events_b.forEach((event_b) => {
-      if (inFuture && !event.upcoming) {
+      if (inFuture && !event_b.upcoming) {
         return;
       }
       rows.push(
