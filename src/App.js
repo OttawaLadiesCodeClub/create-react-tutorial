@@ -17,12 +17,12 @@ class App extends Component {
 }
 
 const EVENTS = [
-  {date: '2017-06-12', name: 'Functional vs Object Oriented Programming'},
-  {date: '2017-08-14', name: 'Pushing left Talk'},
-  {date: '2017-11-01', name: 'White paper club - Excluded Middle'},
-  {date: '2017-11-09', name: 'React Tutorial'},
-  {date: '2017-12-06', name: 'Ladies in Code in History'},
-  {date: '2017-01-04', name: 'Security Leadership Talk'}
+  {date: '2017-06-12', upcoming: false, name: 'Functional vs Object Oriented Programming'},
+  {date: '2017-08-14', upcoming: false, name: 'Pushing left Talk'},
+  {date: '2017-11-01', upcoming: false, name: 'White paper club - Excluded Middle'},
+  {date: '2017-11-09', upcoming: false, name: 'React Tutorial'},
+  {date: '2017-12-06', upcoming: true, name: 'Ladies in Code in History'},
+  {date: '2017-01-04', upcoming: true, name: 'Security Leadership Talk'}
 ];
 
 
