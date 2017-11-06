@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import EventList from './EventList.js'
-import Event from './Event.js'
 import Filter from './Filter.js'
 
 class EventTable extends React.Component {
@@ -27,7 +26,7 @@ class EventTable extends React.Component {
           onFutureFilter={this.handleFutureFilter}
         />
         <EventList
-          events={this.props.events}
+          events_b={this.props.events_a}
           inFuture={this.state.inFuture}
         />
       </div>

@@ -7,28 +7,30 @@ class EventList extends React.Component {
 
     const rows = [];
 
-    this.props.events.forEach((event) => {
-      if (inFuture && !event.stocked) {
+    this.props.events_b.forEach((event_b) => {
+      if (inFuture && !event.upcoming) {
         return;
       }
       rows.push(
         <Event
-          event={event}
-          key={event.name}
+          event_c={event_b}
+          key={event_b.name}
         />
       );
     });
 
     return (
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Date</th>
-          </tr>
-        </thead>
-        <tbody>{rows}</tbody>
-      </table>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>{rows}</tbody>
+        </table>
+      </div>
     );
   }
 }

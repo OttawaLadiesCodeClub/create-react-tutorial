@@ -15,17 +15,17 @@ class Filter extends React.Component {
 
   render() {
     return (
-      <form>
-        <p>
-          <input
-            type="checkbox"
-            checked={this.props.inFuture}
-            onChange={this.handleFutureFilter}
-          />
-          {' '}
-          Only show events in the future
-        </p>
-      </form>
+      <div>
+        <form>
+            <input
+              type="checkbox"
+              checked={this.props.inFuture}
+              onChange={this.handleFutureFilter}
+            />
+            {' '}
+            Only show events in the future
+        </form>
+      </div>
     );
   }
 }
