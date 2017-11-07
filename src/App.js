@@ -20,7 +20,6 @@ class App extends Component {
           <p className="App-intro">
             <div>
                 <form>
-                  <input type="text" placeholder="Search..."/>
                   <p><input type="checkbox" value="on"/> Only show future events</p>
                 </form>
                 <table>
