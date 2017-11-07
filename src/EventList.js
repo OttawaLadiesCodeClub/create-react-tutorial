@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Event from './Event.js'
 
-class EventList extends React.Component {
+class EventList extends Component {
   render() {
     const inFuture = this.props.inFuture;
 

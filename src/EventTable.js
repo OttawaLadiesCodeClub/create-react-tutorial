@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import EventList from './EventList.js'
 import Filter from './Filter.js'
 
-class EventTable extends React.Component {
+class EventTable extends Component {
   constructor(props) {
     super(props);
     this.state = {
