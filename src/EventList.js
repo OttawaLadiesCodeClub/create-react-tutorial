@@ -6,11 +6,11 @@ class EventList extends React.Component {
 
     const rows = [];
 
-    this.props.events_b.forEach((event_b) => {
+    this.props.events.forEach((event) => {
       rows.push(
         <Event
-          event_c={event_b}
-          key={event_b.name}
+          event={event}
+          key={event.name}
         />
       );
     });

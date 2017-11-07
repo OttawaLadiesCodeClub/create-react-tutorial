@@ -8,7 +8,7 @@ class EventManager extends Component {
       <div>
         <Filter/>
         <EventList
-          events_b={this.props.events_a}
+          events={this.props.events}
         />
       </div>
     );
