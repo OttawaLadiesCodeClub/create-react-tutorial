@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Filter extends React.Component {
+class Filter extends Component {
   render() {
     return (
       <div>

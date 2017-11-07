@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Event extends React.Component {
+class Event extends Component {
   render() {
 
     const event_d = this.props.event_c;
