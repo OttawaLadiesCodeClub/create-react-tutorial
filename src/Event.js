@@ -3,12 +3,12 @@ import React, { Component } from 'react'
 class Event extends Component {
   render() {
 
-    const event_d = this.props.event_c;
+    const event = this.props.event;
 
     return (
       <tr>
-        <td>{event_d.name}</td>
-        <td>{event_d.date}</td>
+        <td>{event.name}</td>
+        <td>{event.date}</td>
       </tr>
     );
   }

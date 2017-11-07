@@ -3,18 +3,18 @@ import Event from './Event.js'
 
 class EventList extends Component {
   render() {
-    const inFuture = this.props.inFuture;
+    const showUpcoming = this.props.showUpcoming;
 
     const rows = [];
 
-    this.props.events_b.forEach((event_b) => {
-      if (inFuture && !event_b.upcoming) {
+    this.props.events.forEach((event) => {
+      if (showUpcoming && !event.upcoming) {
         return;
       }
       rows.push(
         <Event
-          event_c={event_b}
-          key={event_b.name}
+          event={event}
+          key={event.name}
         />
       );
     });

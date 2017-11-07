@@ -2,15 +2,12 @@ import React, { Component } from 'react'
 
 class Filter extends Component {
   constructor(props) {
-
     super(props);
-
-    this.handleFutureFilter = this.handleFutureFilter.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleFutureFilter(e) {
-
-    this.props.onFutureFilter(e.target.checked);
+  handleClick(e) {
+    this.props.onFilter(e.target.checked);
   }
 
   render() {
@@ -19,8 +16,8 @@ class Filter extends Component {
         <form>
             <input
               type="checkbox"
-              checked={this.props.inFuture}
-              onChange={this.handleFutureFilter}
+              checked={this.props.showUpcoming}
+              onClick={this.handleClick}
             />
             {' '}
             Only show events in the future

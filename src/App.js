@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import EventTable from './EventTable.js'
+import EventManager from './EventManager.js'
 
 class App extends Component {
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
             <img src="http://flaticons.net/icons/Mobile%20Application/Calendar-Date-04.png" className="App-logo" alt="logo" />
             <h1 className="App-title">Upcoming engagements</h1>
         </header>
-        <EventTable events_a={EVENTS} />
+        <EventManager events={EVENTS} />
       </div>
     );
   }
